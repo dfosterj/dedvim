@@ -590,6 +590,7 @@ noremap <Leader>gd :! git diff %<cr>
 noremap <Leader>gp :! git push<cr>
 noremap <Leader>grf :Gremove
 noremap <Leader>gls :! git log --stat<cr>
+noremap <Leader>rr :! ruby %<cr>
 
 """"""
 "Rust
