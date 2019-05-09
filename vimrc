@@ -658,3 +658,7 @@ endif
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+" Custom Macros
+let @f="0ji\"\<Esc>\<S-E>a\",\<Esc>0"
+let @g="0ji\"\<Esc>\<S-E>l\<S-D>a\",\<Esc>"
