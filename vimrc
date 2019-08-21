@@ -659,6 +659,9 @@ endif
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
+" Fix CRTL P path
+let g:ctrlp_working_path_mode = 0
+
 " Custom Macros
 let @f="0ji\"\<Esc>\<S-E>a\",\<Esc>0"
 let @g="0ji\"\<Esc>\<S-E>l\<S-D>a\",\<Esc>"
