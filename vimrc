@@ -89,6 +89,7 @@ Plug 'tpope/vim-rake'
 Plug 'tpope/vim-projectionist'
 Plug 'thoughtbot/vim-rspec'
 Plug 'ecomba/vim-ruby-refactoring'
+Plug 'vim-scripts/c.vim'
 
 
 " rust
@@ -666,3 +667,6 @@ let g:ctrlp_working_path_mode = 0
 " Custom Macros
 let @f="0ji\"\<Esc>\<S-E>a\",\<Esc>0"
 let @g="0ji\"\<Esc>\<S-E>l\<S-D>a\",\<Esc>"
+
+" C && C++
+noremap <Leader>gcc :! gcc % && ./a.out<cr>
