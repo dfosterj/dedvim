@@ -671,7 +671,7 @@ let @g="0ji\"\<Esc>\<S-E>l\<S-D>a\",\<Esc>"
 
 " C && C++
 noremap <Leader>gcc :! gcc % && ./a.out<cr>
-
+set background=dark
 let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_improved_strings=0
 let g:gruvbox_italic=1
@@ -683,4 +683,4 @@ noremap <silent> coh :call gruvbox#hls_toggle()<CR>
 nnoremap * :let @/ = ""<CR>:call gruvbox#hls_show()<CR>*
 nnoremap / :let @/ = ""<CR>:call gruvbox#hls_show()<CR>/
 nnoremap ? :let @/ = ""<CR>:call gruvbox#hls_show()<CR>?
-
+highlight Normal ctermbg=NONE
