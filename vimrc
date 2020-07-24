@@ -47,6 +47,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'godlygeek/tabular'
 Plug 'shougo/neocomplete'
 Plug 'kchmck/vim-coffee-script'
+Plug 'morhetz/gruvbox'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -188,7 +189,7 @@ set nowrap
 
 let no_buffers_menu=1
 if !exists('g:not_finish_vimplug')
-  colorscheme railscasts
+  "colorscheme railscasts
 endif
 
 set mousemodel=popup
@@ -670,3 +671,16 @@ let @g="0ji\"\<Esc>\<S-E>l\<S-D>a\",\<Esc>"
 
 " C && C++
 noremap <Leader>gcc :! gcc % && ./a.out<cr>
+
+let g:gruvbox_contrast_dark="hard"
+let g:gruvbox_improved_strings=0
+let g:gruvbox_italic=1
+
+colorscheme gruvbox
+nnoremap <silent> [oh :call gruvbox#hls_show()<CR>
+nnoremap <silent> ]oh :call gruvbox#hls_hide()<CR>
+noremap <silent> coh :call gruvbox#hls_toggle()<CR>
+nnoremap * :let @/ = ""<CR>:call gruvbox#hls_show()<CR>*
+nnoremap / :let @/ = ""<CR>:call gruvbox#hls_show()<CR>/
+nnoremap ? :let @/ = ""<CR>:call gruvbox#hls_show()<CR>?
+
