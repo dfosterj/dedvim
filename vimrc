@@ -48,6 +48,7 @@ Plug 'godlygeek/tabular'
 Plug 'shougo/neocomplete'
 Plug 'kchmck/vim-coffee-script'
 Plug 'morhetz/gruvbox'
+Plug 'luochen1990/rainbow'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -685,3 +686,6 @@ nnoremap * :let @/ = ""<CR>:call gruvbox#hls_show()<CR>*
 nnoremap / :let @/ = ""<CR>:call gruvbox#hls_show()<CR>/
 nnoremap ? :let @/ = ""<CR>:call gruvbox#hls_show()<CR>?
 highlight Normal ctermbg=NONE
+
+"Rainbow Paranthesis
+let g:rainbow_active = 1
