@@ -378,6 +378,10 @@ nnoremap <S-Tab> gT
 nnoremap <leader>tn :tabnew<CR>
 nnoremap <leader>tc :tabclose<CR>
 
+"" Dtabs
+nnoremap <C-right> :next<CR>
+nnoremap <C-left> :prev<CR>
+
 "" Set working directory
 nnoremap <leader>. :lcd %:p:h<CR>
 
