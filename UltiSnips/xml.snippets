@@ -1,9 +1,19 @@
 snippet fw
-    <port protocol="tcp" port="${VISUAL}"/>
+<?xml version="1.0" encoding="utf-8"?>
+<zone>
+    <short>buildfw</short>
+    <description>Build Server Firewall</description>
+    <service name="ssh"/>
+    <service name="dhcpv6-client"/>
+</zone>
 endsnippet
 
 snippet f1
     <port protocol="${VISUAL}" port="
+endsnippet
+
+snippet f2
+"/>
 endsnippet
 
 snippet rr

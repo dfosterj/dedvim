@@ -49,6 +49,9 @@ Plug 'shougo/neocomplete'
 Plug 'kchmck/vim-coffee-script'
 Plug 'morhetz/gruvbox'
 Plug 'luochen1990/rainbow'
+Plug 'tpope/vim-endwise'
+Plug 'gabrielelana/vim-markdown'
+
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -211,6 +214,7 @@ else
   let g:indentLine_concealcursor = 0
   let g:indentLine_char = '┆'
   let g:indentLine_faster = 1
+  let g:indentLine_conceallevel = 0
 
 
   if $COLORTERM == 'gnome-terminal'
