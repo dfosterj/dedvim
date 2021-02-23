@@ -51,6 +51,7 @@ Plug 'morhetz/gruvbox'
 Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-endwise'
 Plug 'gabrielelana/vim-markdown'
+Plug 'davidhalter/jedi-vim'
 
 
 if isdirectory('/usr/local/opt/fzf')
@@ -602,7 +603,12 @@ noremap <Leader>gd :! git diff %<cr>
 noremap <Leader>gp :! git push<cr>
 noremap <Leader>grf :Gremove
 noremap <Leader>gls :! git log --stat<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"run cmds"
 noremap <Leader>rr :! ruby %<cr>
+noremap <Leader>sr :! python3 %<cr>
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""
 "Rust
