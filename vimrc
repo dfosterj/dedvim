@@ -51,6 +51,7 @@ Plug 'morhetz/gruvbox'
 Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-endwise'
 Plug 'gabrielelana/vim-markdown'
+Plug 'davidhalter/jedi-vim'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -701,3 +702,9 @@ highlight Normal ctermbg=NONE
 
 "Rainbow Paranthesis
 let g:rainbow_active = 1
+
+"Python
+let g:jedi#show_call_signatures = 0
+let g:jedi#popup_on_dot = 0
+
+
