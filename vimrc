@@ -52,6 +52,7 @@ Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-endwise'
 Plug 'gabrielelana/vim-markdown'
 Plug 'davidhalter/jedi-vim'
+Plug 'ajmwagar/vim-deus'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -691,7 +692,7 @@ let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_improved_strings=0
 let g:gruvbox_italic=1
 
-colorscheme gruvbox
+colorscheme deus
 nnoremap <silent> [oh :call gruvbox#hls_show()<CR>
 nnoremap <silent> ]oh :call gruvbox#hls_hide()<CR>
 noremap <silent> coh :call gruvbox#hls_toggle()<CR>
@@ -706,5 +707,3 @@ let g:rainbow_active = 1
 "Python
 let g:jedi#show_call_signatures = 0
 let g:jedi#popup_on_dot = 0
-
-
