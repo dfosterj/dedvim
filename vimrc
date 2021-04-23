@@ -437,13 +437,13 @@ if has('autocmd')
 endif
 
 "" Copy/Paste/Cut
-set clipboard=unnamedplus
+"set clipboard=unnamedplus
 
 noremap YY "+y<CR>
 noremap <leader>p "+gP<CR>
 noremap XX "+x<CR>
 
-if has('macunix')
+if has('mac')
   " pbcopy for OSX copy/paste
   vmap <C-x> :!pbcopy<CR>
   vmap <C-c> :w !pbcopy<CR><CR>
