@@ -707,3 +707,6 @@ let g:rainbow_active = 1
 "Python
 let g:jedi#show_call_signatures = 0
 let g:jedi#popup_on_dot = 0
+
+"NerdTree
+let NERDTreeShowHidden=1
