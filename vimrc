@@ -693,7 +693,7 @@ let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_improved_strings=0
 let g:gruvbox_italic=1
 
-colorscheme deus
+colorscheme gruvbox
 nnoremap <silent> [oh :call gruvbox#hls_show()<CR>
 nnoremap <silent> ]oh :call gruvbox#hls_hide()<CR>
 noremap <silent> coh :call gruvbox#hls_toggle()<CR>
@@ -718,3 +718,6 @@ set completeopt+=noselect
 let g:mucomplete#enable_auto_at_startup = 1
 
 
+"prettifier
+map <Leader>pj <Esc>:%!ruby -rjson -e 'puts JSON.pretty_generate(JSON.load($<))'<CR>:set filetype=json<CR>
+map <Leader>py <Esc>:%!ruby -ryaml -e 'puts YAML.load($<).to_yaml'<CR>:set filetype=yaml<CR>
