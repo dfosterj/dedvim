@@ -54,6 +54,7 @@ Plug 'gabrielelana/vim-markdown'
 Plug 'davidhalter/jedi-vim'
 Plug 'ajmwagar/vim-deus'
 Plug 'lifepillar/vim-mucomplete'
+Plug 'ekalinin/Dockerfile'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -701,6 +702,8 @@ nnoremap * :let @/ = ""<CR>:call gruvbox#hls_show()<CR>*
 nnoremap / :let @/ = ""<CR>:call gruvbox#hls_show()<CR>/
 nnoremap ? :let @/ = ""<CR>:call gruvbox#hls_show()<CR>?
 highlight Normal ctermbg=NONE
+highlight Comment ctermfg=Black
+highlight Comment ctermbg=Blue
 
 "Rainbow Paranthesis
 let g:rainbow_active = 1
