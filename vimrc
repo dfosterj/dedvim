@@ -207,8 +207,11 @@ set gfn=Monospace\ 10
 if has("gui_running")
   if has("gui_mac") || has("gui_macvim")
     set guifont=Menlo:h12
-    set transparency=7
-  endif
+    set transparency=0
+    set t_Co=256
+    highlight Normal guibg=black guifg=white
+    set background=dark
+    endif
 else
   let g:CSApprox_loaded = 1
 
