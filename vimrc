@@ -209,15 +209,14 @@ if has("gui_running")
     set guifont=Menlo:h12
     set transparency=0
     set t_Co=256
-    highlight Normal guibg=black guifg=white
-    set background=dark
+    highlight Normal guibg=#000000 guifg=white
     endif
 else
   let g:CSApprox_loaded = 1
 
   " IndentLine
-  let g:indentLine_enabled = 1
-  let g:indentLine_concealcursor = 0
+"  let g:indentLine_enabled = 1
+"  let g:indentLine_concealcursor = 0
   let g:indentLine_char = '┆'
   let g:indentLine_faster = 1
   let g:indentLine_conceallevel = 0
@@ -727,3 +726,4 @@ let g:mucomplete#enable_auto_at_startup = 1
 "prettifier
 map <Leader>pj <Esc>:%!ruby -rjson -e 'puts JSON.pretty_generate(JSON.load($<))'<CR>:set filetype=json<CR>
 map <Leader>py <Esc>:%!ruby -ryaml -e 'puts YAML.load($<).to_yaml'<CR>:set filetype=yaml<CR>
+
