@@ -45,7 +45,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/nerdcommenter'
 Plug 'kien/ctrlp.vim'
 Plug 'godlygeek/tabular'
-"Plug 'shougo/neocomplete'
+Plug 'shougo/neocomplete'
 Plug 'kchmck/vim-coffee-script'
 Plug 'morhetz/gruvbox'
 Plug 'luochen1990/rainbow'
@@ -54,7 +54,8 @@ Plug 'gabrielelana/vim-markdown'
 Plug 'davidhalter/jedi-vim'
 Plug 'ajmwagar/vim-deus'
 Plug 'lifepillar/vim-mucomplete'
-Plug 'ekalinin/Dockerfile'
+Plug 'kurtpreston/vim-autoformat-rails'
+
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
