@@ -54,7 +54,7 @@ Plug 'gabrielelana/vim-markdown'
 Plug 'davidhalter/jedi-vim'
 Plug 'ajmwagar/vim-deus'
 Plug 'lifepillar/vim-mucomplete'
-Plug 'kurtpreston/vim-autoformat-rails'
+Plug 'chiel92/vim-autoformat'
 
 
 if isdirectory('/usr/local/opt/fzf')
