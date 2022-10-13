@@ -55,7 +55,6 @@ Plug 'davidhalter/jedi-vim'
 Plug 'ajmwagar/vim-deus'
 Plug 'lifepillar/vim-mucomplete'
 Plug 'Chiel92/vim-autoformat'
-Plug 'hashivim/vim-terraform'
 
 
 if isdirectory('/usr/local/opt/fzf')
@@ -292,7 +291,7 @@ let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
 let g:NERDTreeWinSize = 50
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 nnoremap <silent> <F2> :NERDTreeFind<CR>
-noremap <C-n> :NERDTreeToggle<CR>
+/*noremap <C-n> :NERDTreeToggle<CR>*/
 
 " grep.vim
 nnoremap <silent> <leader>f :Rgrep<CR>
@@ -725,8 +724,24 @@ map <Leader>py <Esc>:%!ruby -ryaml -e 'puts YAML.load($<).to_yaml'<CR>:set filet
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
+" Vim
+let g:indentLine_color_term = 239
+
+" GVim
+let g:indentLine_color_gui = '#A4E57E'
+
+" none X terminal
+let g:indentLine_color_tty_light = 7 " (default: 4)
+let g:indentLine_color_dark = 1 " (default: 2)
+
+" Background (Vim, GVim)
+let g:indentLine_bgcolor_term = 202
+let g:indentLine_bgcolor_gui = '#FF5F00'
+
 " IndentLine
-let g:indentLine_enabled = 1
-"let g:indentLine_concealcursor = 0
-let g:indentLine_char = '┆'
-let g:indentLine_faster = 1
+"  let g:indentLine_enabled = 1
+"  let g:indentLine_concealcursor = 0
+  let g:indentLine_char = '┆'
+  let g:indentLine_faster = 1
+  let g:indentLine_conceallevel = 0
+
