@@ -607,6 +607,7 @@ noremap <Leader>gls :! git log --stat<cr>
 "run cmds"
 noremap <Leader>rr :! ruby %<cr>
 noremap <Leader>sr :! python3 %<cr>
+noremap <Leader>br :! bash %<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""
