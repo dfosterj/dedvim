@@ -260,7 +260,8 @@ if exists("*fugitive#statusline")
 endif
 
 " vim-airline
-let g:airline_theme = 'powerlineish'
+"let g:airline_theme = 'powerlineish'
+let g:airline_theme = 'base16_gruvbox_dark_hard'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
@@ -701,7 +702,7 @@ nnoremap / :let @/ = ""<CR>:call gruvbox#hls_show()<CR>/
 nnoremap ? :let @/ = ""<CR>:call gruvbox#hls_show()<CR>?
 highlight Normal ctermbg=NONE
 highlight Comment ctermfg=DarkBlue
-highlight Comment ctermbg=Black
+highlight Comment ctermbg=NONE
 
 "Rainbow Paranthesis
 let g:rainbow_active = 1
