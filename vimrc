@@ -47,7 +47,6 @@ Plug 'kien/ctrlp.vim'
 Plug 'godlygeek/tabular'
 Plug 'shougo/neocomplete'
 Plug 'kchmck/vim-coffee-script'
-Plug 'morhetz/gruvbox'
 Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-endwise'
 Plug 'gabrielelana/vim-markdown'
@@ -56,6 +55,8 @@ Plug 'ajmwagar/vim-deus'
 Plug 'lifepillar/vim-mucomplete'
 Plug 'Chiel92/vim-autoformat'
 Plug 'hashivim/vim-terraform'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'morhetz/gruvbox'
 
 
 if isdirectory('/usr/local/opt/fzf')
@@ -693,7 +694,9 @@ let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_improved_strings=0
 let g:gruvbox_italic=1
 
-colorscheme gruvbox
+" Colors
+"colorscheme gruvbox
+colorscheme PaperColor
 nnoremap <silent> [oh :call gruvbox#hls_show()<CR>
 nnoremap <silent> ]oh :call gruvbox#hls_hide()<CR>
 noremap <silent> coh :call gruvbox#hls_toggle()<CR>
