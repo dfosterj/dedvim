@@ -57,6 +57,8 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'hashivim/vim-terraform'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
+Plug 'sheerun/vim-polyglot'
+Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 
 
 if isdirectory('/usr/local/opt/fzf')
@@ -696,7 +698,8 @@ let g:gruvbox_italic=1
 
 " Colors
 "colorscheme gruvbox
-colorscheme PaperColor
+"colorscheme PaperColor
+colorscheme spaceduck
 nnoremap <silent> [oh :call gruvbox#hls_show()<CR>
 nnoremap <silent> ]oh :call gruvbox#hls_hide()<CR>
 noremap <silent> coh :call gruvbox#hls_toggle()<CR>
