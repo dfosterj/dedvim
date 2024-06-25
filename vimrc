@@ -59,6 +59,10 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'
 Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
+Plug 'tomasiser/vim-code-dark'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'yorickpeterse/happy_hacking.vim'
+
 
 
 if isdirectory('/usr/local/opt/fzf')
@@ -700,6 +704,10 @@ let g:gruvbox_italic=1
 "colorscheme gruvbox
 "colorscheme PaperColor
 colorscheme spaceduck
+"colorscheme codedark
+autocmd ColorScheme * highlight Normal ctermbg=None
+
+
 nnoremap <silent> [oh :call gruvbox#hls_show()<CR>
 nnoremap <silent> ]oh :call gruvbox#hls_hide()<CR>
 noremap <silent> coh :call gruvbox#hls_toggle()<CR>
