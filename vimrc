@@ -47,7 +47,6 @@ Plug 'kien/ctrlp.vim'
 Plug 'godlygeek/tabular'
 Plug 'shougo/neocomplete'
 Plug 'kchmck/vim-coffee-script'
-Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-endwise'
 Plug 'gabrielelana/vim-markdown'
 Plug 'davidhalter/jedi-vim'
@@ -62,8 +61,8 @@ Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 Plug 'tomasiser/vim-code-dark'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'yorickpeterse/happy_hacking.vim'
-
-
+Plug 'frazrepo/vim-rainbow'
+Plug 'jiangmiao/auto-pairs'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
