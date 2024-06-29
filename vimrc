@@ -623,67 +623,6 @@ noremap <Leader>br :! bash %<cr>
 noremap <Leader>cbr :! cargo build && cargo run<cr>
 noremap <Leader>ct :! cargo test<cr>
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" NeoComplete
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" Disable AutoComplPop.
-"let g:acp_enableAtStartup = 0
-"" Use neocomplete.
-"let g:neocomplete#enable_at_startup = 1
-"" Use smartcase.
-"let g:neocomplete#enable_smart_case = 1
-"" Set minimum syntax keyword length.
-"let g:neocomplete#sources#syntax#min_keyword_length = 3
-"let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
-
-"" Define dictionary.
-"let g:neocomplete#sources#dictionary#dictionaries = {
-    "\ 'default' : '',
-    "\ 'vimshell' : $HOME.'/.vimshell_hist',
-    "\ 'scheme' : $HOME.'/.gosh_completions'
-        "\ }
-
-"" Define keyword.
-"if !exists('g:neocomplete#keyword_patterns')
-    "let g:neocomplete#keyword_patterns = {}
-"endif
-"let g:neocomplete#keyword_patterns['default'] = '\h\w*'
-
-"" Plugin key-mappings.
-"inoremap <expr><C-g>     neocomplete#undo_completion()
-"inoremap <expr><C-l>     neocomplete#complete_common_string()
-
-"" Recommended key-mappings.
-"" <CR>: close popup and save indent.
-"inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-"function! s:my_cr_function()
-  "return neocomplete#close_popup() . "\<CR>"
-  "" For no inserting <CR> key.
-  ""return pumvisible() ? neocomplete#close_popup() : "\<CR>"
-"endfunction
-"" <TAB>: completion.
-"inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-"" <C-h>, <BS>: close popup and delete backword char.
-"inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-"inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
-"inoremap <expr><C-y>  neocomplete#close_popup()
-"inoremap <expr><C-e>  neocomplete#cancel_popup()
-
-"" Enable omni completion.
-"autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-"autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-"autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-"autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-"autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-"set omnifunc=syntaxcomplete#Complete
-
-"" Enable heavy omni completion.
-"if !exists('g:neocomplete#sources#omni#input_patterns')
-  "let g:neocomplete#sources#omni#input_patterns = {}
-"endif
-"" For perlomni.vim setting.
-"" https://github.com/c9s/perlomni.vim
-"let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
 " Fix CRTL P path
 let g:ctrlp_working_path_mode = 0
@@ -702,9 +641,13 @@ let g:gruvbox_italic=1
 " Colors
 "colorscheme gruvbox
 "colorscheme PaperColor
-colorscheme spaceduck
+"colorscheme spaceduck
 "colorscheme codedark
-autocmd ColorScheme * highlight Normal ctermbg=None
+colorscheme dracula
+autocmd ColorScheme * highlight Normal
+hi Normal ctermbg=16 guibg=#000000
+hi LineNr ctermbg=16 guibg=#000000
+
 
 
 nnoremap <silent> [oh :call gruvbox#hls_show()<CR>
@@ -713,9 +656,7 @@ noremap <silent> coh :call gruvbox#hls_toggle()<CR>
 nnoremap * :let @/ = ""<CR>:call gruvbox#hls_show()<CR>*
 nnoremap / :let @/ = ""<CR>:call gruvbox#hls_show()<CR>/
 nnoremap ? :let @/ = ""<CR>:call gruvbox#hls_show()<CR>?
-highlight Normal ctermbg=NONE
 highlight Comment ctermfg=DarkBlue
-highlight Comment ctermbg=NONE
 
 "Rainbow Paranthesis
 let g:rainbow_active = 1
@@ -723,6 +664,11 @@ let g:rainbow_active = 1
 "Python
 let g:jedi#show_call_signatures = 0
 let g:jedi#popup_on_dot = 0
+let g:jedi#auto_vim_configuration = 0
+let g:jedi#use_tabs_not_buffers = 1
+let g:jedi#use_splits_not_buffers = "left"
+let g:jedi#popup_select_first = 0
+let g:jedi#show_call_signatures = "1"
 
 "NerdTree
 let NERDTreeShowHidden=1
