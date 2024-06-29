@@ -662,14 +662,15 @@ highlight Comment ctermfg=DarkBlue
 let g:rainbow_active = 1
 
 "Python
-let g:jedi#show_call_signatures = 0
+let g:jedi#show_call_signatures = 1
 let g:jedi#popup_on_dot = 0
 let g:jedi#auto_vim_configuration = 0
 let g:jedi#use_tabs_not_buffers = 1
 let g:jedi#popup_select_first = 0
-let g:jedi#show_call_signatures = "1"
 let g:jedi#use_splits_not_buffers = "left"
-set completeopt-=preview
+"set completeopt-=preview
+let g:jedi#auto_vim_configuration = 0
+set completeopt=menuone,longest
 
 "NerdTree
 let NERDTreeShowHidden=1
