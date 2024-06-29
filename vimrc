@@ -666,16 +666,17 @@ let g:jedi#show_call_signatures = 0
 let g:jedi#popup_on_dot = 0
 let g:jedi#auto_vim_configuration = 0
 let g:jedi#use_tabs_not_buffers = 1
-let g:jedi#use_splits_not_buffers = "left"
 let g:jedi#popup_select_first = 0
 let g:jedi#show_call_signatures = "1"
+let g:jedi#use_splits_not_buffers = "left"
+set completeopt-=preview
 
 "NerdTree
 let NERDTreeShowHidden=1
 
 "vim-mucomplete
 set completeopt+=menuone
-set completeopt+=noselect
+"set completeopt+=noselect
 let g:mucomplete#enable_auto_at_startup = 1
 
 
@@ -691,3 +692,5 @@ let g:indentLine_enabled = 1
 "let g:indentLine_concealcursor = 0
 let g:indentLine_char = '┆'
 let g:indentLine_faster = 1
+
+
