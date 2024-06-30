@@ -63,6 +63,8 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'yorickpeterse/happy_hacking.vim'
 Plug 'frazrepo/vim-rainbow'
 Plug 'jiangmiao/auto-pairs'
+Plug 'jacoborus/tender.vim'
+
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -633,6 +635,7 @@ let @g="0ji\"\<Esc>\<S-E>l\<S-D>a\",\<Esc>"
 
 " C && C++
 noremap <Leader>gcc :! gcc % && ./a.out<cr>
+noremap <Leader>ee :! g++ % && ./a.out<cr>
 set background=dark
 let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_improved_strings=0
@@ -643,7 +646,8 @@ let g:gruvbox_italic=1
 "colorscheme PaperColor
 "colorscheme spaceduck
 "colorscheme codedark
-colorscheme dracula
+"colorscheme dracula
+colorscheme tender
 autocmd ColorScheme * highlight Normal
 hi Normal ctermbg=16 guibg=#000000
 hi LineNr ctermbg=16 guibg=#000000
@@ -693,9 +697,3 @@ let g:indentLine_enabled = 1
 "let g:indentLine_concealcursor = 0
 let g:indentLine_char = '┆'
 let g:indentLine_faster = 1
-
-
-" C
-autocmd filetype python nnoremap <F4> :w <bar> exec '!python '.shellescape('%')<CR>
-autocmd filetype c nnoremap <F4> :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
-autocmd filetype cpp nnoremap <F4> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
