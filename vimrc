@@ -494,6 +494,7 @@ nnoremap <Leader>o :.Gbrowse<CR>
 let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
 let g:rubycomplete_rails = 1
+let g:lua_complete_omni = 1
 
 augroup vimrc-ruby
   autocmd!
@@ -646,8 +647,8 @@ let g:gruvbox_italic=1
 "colorscheme PaperColor
 "colorscheme spaceduck
 "colorscheme codedark
-"colorscheme dracula
-colorscheme tender
+colorscheme dracula
+"colorscheme tender
 autocmd ColorScheme * highlight Normal
 hi Normal ctermbg=16 guibg=#000000
 hi LineNr ctermbg=16 guibg=#000000
