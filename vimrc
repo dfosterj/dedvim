@@ -643,12 +643,7 @@ let g:gruvbox_improved_strings=0
 let g:gruvbox_italic=1
 
 " Colors
-"colorscheme gruvbox
-"colorscheme PaperColor
-"colorscheme spaceduck
-"colorscheme codedark
-colorscheme dracula
-"colorscheme tender
+colorscheme PaperColor
 autocmd ColorScheme * highlight Normal
 hi Normal ctermbg=16 guibg=#000000
 hi LineNr ctermbg=16 guibg=#000000
