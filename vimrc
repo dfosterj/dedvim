@@ -646,7 +646,7 @@ let NERDTreeShowHidden=1
 
 "vim-mucomplete
 let g:mucomplete#enable_auto_at_startup = 1
-set completeopt-=preview
+"set completeopt-=preview
 set completeopt+=menuone,noselect
 
 
@@ -662,10 +662,3 @@ let g:indentLine_enabled = 1
 "let g:indentLine_concealcursor = 0
 let g:indentLine_char = '┆'
 let g:indentLine_faster = 1
-
-Plug 'Shougo/echodoc.vim'
-
-" Or, you could use neovim's virtual virtual text feature.
-let g:echodoc#type = "signature"
-set cmdheight=2
-let g:echodoc_enable_at_startup = 1
