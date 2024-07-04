@@ -67,7 +67,6 @@ Plug 'lifepillar/vim-mucomplete'
 Plug 'Chiel92/vim-autoformat'
 Plug 'frazrepo/vim-rainbow'
 Plug 'jiangmiao/auto-pairs'
-Plug 'Valloric/YouCompleteMe'
 Plug 'tpope/vim-endwise'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-commentary'
@@ -648,7 +647,7 @@ let NERDTreeShowHidden=1
 "vim-mucomplete
 let g:mucomplete#enable_auto_at_startup = 1
 set completeopt-=preview
-set completeopt+=longest,menuone,noselect
+set completeopt+=menuone,noselect
 
 
 "prettifier
@@ -664,13 +663,9 @@ let g:indentLine_enabled = 1
 let g:indentLine_char = '┆'
 let g:indentLine_faster = 1
 
-Plug 'Valloric/YouCompleteMe'
-let g:loaded_youcompleteme = 1
-let g:ycm_confirm_extra_conf = 0
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_autoclose_preview_window_after_completion=1
-let g:ycm_auto_hover = 0
-let g:ycm_semantic_triggers = {
-  \   'cpp': [ 're!.' ],
-  \   'c++': [ 're!.' ]
-  \ }
+Plug 'Shougo/echodoc.vim'
+
+" Or, you could use neovim's virtual virtual text feature.
+let g:echodoc#type = "signature"
+set cmdheight=2
+let g:echodoc_enable_at_startup = 1
