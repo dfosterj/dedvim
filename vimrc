@@ -52,7 +52,6 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
 Plug 'tpope/vim-projectionist'
 Plug 'thoughtbot/vim-rspec'
-Plug 'ecomba/vim-ruby-refactoring'
 Plug 'vim-scripts/c.vim'
 " rust
 " Vim racer
@@ -78,10 +77,8 @@ Plug 'Raimondi/delimitMate'
 " Colors
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
-Plug 'pineapplegiant/spaceduck'
 Plug 'tomasiser/vim-code-dark'
 Plug 'dracula/vim'
-Plug 'yorickpeterse/happy_hacking.vim'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
