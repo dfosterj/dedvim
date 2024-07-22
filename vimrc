@@ -639,7 +639,6 @@ let g:jedi#use_tabs_not_buffers = 1
 let g:jedi#popup_select_first = 0
 let g:jedi#use_splits_not_buffers = "left"
 let g:jedi#auto_vim_configuration = 0
-set completeopt=menuone,longest
 
 "NerdTree
 let NERDTreeShowHidden=1
