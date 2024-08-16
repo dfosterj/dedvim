@@ -613,7 +613,9 @@ let g:gruvbox_improved_strings=0
 let g:gruvbox_italic=1
 
 " Colors
-colorscheme PaperColor
+" colorscheme PaperColor
+colorscheme codedark
+
 autocmd ColorScheme * highlight Normal
 hi Normal ctermbg=16 guibg=#000000
 hi LineNr ctermbg=16 guibg=#000000
@@ -661,3 +663,4 @@ let g:indentLine_enabled = 1
 "let g:indentLine_concealcursor = 0
 let g:indentLine_char = '┆'
 let g:indentLine_faster = 1
+
