@@ -617,8 +617,10 @@ let g:gruvbox_italic=1
 colorscheme codedark
 
 autocmd ColorScheme * highlight Normal
-hi Normal ctermbg=16 guibg=#000000
-hi LineNr ctermbg=16 guibg=#000000
+" hi Normal ctermbg=16 guibg=#000000
+" hi LineNr ctermbg=16 guibg=#000000
+highlight Normal guibg=#282828 ctermbg=233
+
 
 
 
