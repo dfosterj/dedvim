@@ -612,14 +612,26 @@ let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_improved_strings=0
 let g:gruvbox_italic=1
 
-" Colors
+""""""""""""""""""""""""""""""""""""""""
+" Colorscheme
+""""""""""""""""""""""""""""""""""""""""
 " colorscheme PaperColor
 colorscheme codedark
 
 autocmd ColorScheme * highlight Normal
-" hi Normal ctermbg=16 guibg=#000000
-" hi LineNr ctermbg=16 guibg=#000000
-highlight Normal guibg=#282828 ctermbg=233
+" Define a variable for the background color
+let backGroundColor = '#282828'
+
+" Set the default background color for Vim
+execute 'highlight Normal guibg=' . backGroundColor
+
+" Set the background color for other relevant highlight groups
+execute 'highlight NonText guibg=' . backGroundColor
+execute 'highlight LineNr guibg=' . backGroundColor
+execute 'highlight Folded guibg=' . backGroundColor
+execute 'highlight EndOfBuffer guibg=' . backGroundColor
+execute 'highlight SignColumn guibg=' . backGroundColor
+execute 'highlight VertSplit guibg=' . backGroundColor
 
 
 
