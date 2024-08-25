@@ -28,7 +28,6 @@ call plug#begin(expand('~/.vim/plugged'))
 "" Core Plug install packages
 "*****************************************************************************
 Plug 'scrooloose/nerdtree'
-Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -37,6 +36,7 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'majutsushi/tagbar'
 Plug 'avelino/vim-bootstrap-updater'
 Plug 'scrooloose/nerdcommenter'
+Plug 'junegunn/fzf.vim'
 "" Vim-Session
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
@@ -284,7 +284,8 @@ let g:NERDTreeShowBookmarks=1
 let g:NERDTreeWinSize = 50
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 nnoremap <silent> <F2> :NERDTreeFind<CR>
-noremap <C-n> :NERDTreeToggle<CR>
+nnoremap <silent> <Space>e :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 
 
 " vimshell.vim
@@ -596,10 +597,6 @@ noremap <Leader>br :! bash %<cr>
 noremap <Leader>cbr :! cargo build && cargo run<cr>
 noremap <Leader>ct :! cargo test<cr>
 
-
-" Fix CRTL P path
-let g:ctrlp_working_path_mode = 0
-
 " Custom Macros
 let @f="0ji\"\<Esc>\<S-E>a\",\<Esc>0"
 let @g="0ji\"\<Esc>\<S-E>l\<S-D>a\",\<Esc>"
@@ -656,8 +653,6 @@ let g:jedi#popup_select_first = 0
 let g:jedi#use_splits_not_buffers = "left"
 let g:jedi#auto_vim_configuration = 0
 
-"NerdTree
-let NERDTreeShowHidden=1
 
 "vim-mucomplete
 let g:mucomplete#enable_auto_at_startup = 1
@@ -677,4 +672,9 @@ let g:indentLine_enabled = 1
 "let g:indentLine_concealcursor = 0
 let g:indentLine_char = '┆'
 let g:indentLine_faster = 1
+
+"  fzf
+nnoremap <silent> <Space>f :Files<CR>
+nnoremap <silent> <C-p> :Files<CR>
+
 
