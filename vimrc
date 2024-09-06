@@ -37,6 +37,7 @@ Plug 'majutsushi/tagbar'
 Plug 'avelino/vim-bootstrap-updater'
 Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/fzf.vim'
+Plug 'voldikss/vim-floaterm'
 "" Vim-Session
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
@@ -46,6 +47,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'hashivim/vim-terraform'
 Plug 'gabrielelana/vim-markdown'
 Plug 'davidhalter/jedi-vim'
+Plug 'OrangeT/vim-csharp'
 
 " ruby
 Plug 'tpope/vim-rails'
@@ -677,4 +679,7 @@ let g:indentLine_faster = 1
 nnoremap <silent> <Space>f :Files<CR>
 nnoremap <silent> <C-p> :Files<CR>
 
+
+" LazyGit
+nnoremap <Space>gg :FloatermNew lazygit<CR>
 
