@@ -289,7 +289,6 @@ nnoremap <silent> <F2> :NERDTreeFind<CR>
 nnoremap <silent> <Space>e :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 
-
 " vimshell.vim
 let g:vimshell_user_prompt = 'fnamemodify(getcwd(), ":~")'
 let g:vimshell_prompt =  '$ '
@@ -614,8 +613,8 @@ let g:gruvbox_italic=1
 """"""""""""""""""""""""""""""""""""""""
 " Colorscheme
 """"""""""""""""""""""""""""""""""""""""
-" colorscheme PaperColor
-colorscheme codedark
+colorscheme PaperColor
+" colorscheme codedark
 
 autocmd ColorScheme * highlight Normal
 " Define a variable for the background color
@@ -682,4 +681,5 @@ nnoremap <silent> <C-p> :Files<CR>
 
 " LazyGit
 nnoremap <Space>gg :FloatermNew lazygit<CR>
+
 
