@@ -68,7 +68,7 @@ Plug 'shougo/neocomplete'
 Plug 'lifepillar/vim-mucomplete'
 Plug 'Chiel92/vim-autoformat'
 Plug 'frazrepo/vim-rainbow'
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-endwise'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-commentary'
@@ -287,6 +287,7 @@ let g:NERDTreeWinSize = 50
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 nnoremap <silent> <F2> :NERDTreeFind<CR>
 nnoremap <silent> <Space>e :NERDTreeToggle<CR>
+nnoremap <silent> <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 
 " vimshell.vim
