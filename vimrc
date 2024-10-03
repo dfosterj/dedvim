@@ -684,3 +684,10 @@ nnoremap <silent> <C-p> :Files<CR>
 nnoremap <Space>gg :FloatermNew lazygit<CR>
 
 
+" buffers like nvim
+" Map Shift+H to go to the previous buffer
+nnoremap H :bprevious<CR>
+
+" Map Shift+L to go to the next buffer
+nnoremap L :bnext<CR>
+
