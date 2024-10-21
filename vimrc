@@ -679,7 +679,6 @@ let g:indentLine_faster = 1
 nnoremap <silent> <Space>f :Files<CR>
 nnoremap <silent> <C-p> :Files<CR>
 
-
 " LazyGit
 nnoremap <Space>gg :FloatermNew lazygit<CR>
 
