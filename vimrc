@@ -676,6 +676,8 @@ let g:indentLine_char = '┆'
 let g:indentLine_faster = 1
 
 "  fzf
+"  fix hidden file searching
+let $FZF_DEFAULT_COMMAND = 'fd --type f --hidden'
 nnoremap <silent> <Space>f :Files<CR>
 nnoremap <silent> <C-p> :Files<CR>
 
