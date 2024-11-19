@@ -692,3 +692,4 @@ nnoremap H :bprevious<CR>
 " Map Shift+L to go to the next buffer
 nnoremap L :bnext<CR>
 
+set shell=bash
